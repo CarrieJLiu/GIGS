@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+
+.main_firstPage{
+    font-family:'Quicksand', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 2%;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    color: #084D6A;
+    font-size: 23px;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #084D6A;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #084D6A; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    30% { border-color: #97D779 }
+  }
+
+/*
+.main_signup > h1{
+    
+    // 1st step: set gradient colors
+    background-image:linear-gradient(90deg, #F0F1B7, #084D6A, #48BEC5);
+
+    // 2nd step: erase everything that is not immediately behind the text from the background
+    background-clip: text;
+    -webkit-background-clip: text; /* Some browser's need prefix
+  
+    // 3rd step: erase the text, leaving only the background behind it
+    -webkit-text-fill-color: transparent;
+  
+    // Color that contrasts with the gradient if the browser does not support `background-clip: text`
+    color: black;
+}
+*/
+
+
+.card_empgig {
+    width: 12%;
+    display: flex;
+    justify-content: center;    
+    padding: 10px 10px;
+    background: #084D6A;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #48BEC5;
+}
+
+.card_empgig:hover{    
+    background-color: #F0F1B7;
+}
+
+.card_empgig > a{
+    text-decoration: none;
+    color:#48BEC5;
+    font-size: 22px;
+}
+
+.card_empgig > a:hover{
+    color: #084D6A;
+}
+
+.wrapper div{
+    background: white;
+    color:#084D6A;
+    border-radius: 14px;
+    width: 30%;
+    margin-left: 69vh;
+    padding: 10px 50px;
+    
+}
+
+.wrapper > div:hover{
+    background: #97D779;
+    transition: 0.3s;
+}
+
